@@ -1,0 +1,47 @@
+CREATE TABLE `customer` (
+  `userId` int NOT NULL,
+  `userName` varchar(30) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `firstName` varchar(20) NOT NULL,
+  `lastName` varchar(20) NOT NULL,
+  `createdOn` datetime NOT NULL,
+  `isActive` tinyint(1) NOT NULL,
+  PRIMARY KEY (`userId`)
+) ;
+
+CREATE TABLE `order` (
+  `orderId` int NOT NULL,
+  `productId` int NOT NULL,
+  `orderStatus` int NOT NULL,
+  `orderType` int NOT NULL,
+  `orderBy` int NOT NULL,
+  `orderOn` datetime NOT NULL,
+  `shippedOn` datetime NOT NULL,
+  `isActive` tinyint NOT NULL,
+  PRIMARY KEY (`orderId`),
+  KEY `productId_idx` (`productId`),
+  CONSTRAINT `productId` FOREIGN KEY (`productId`) REFERENCES `product` (`productId`) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+
+CREATE TABLE `supplier` (
+  `supplierId` int NOT NULL,
+  `supplierName` varchar(50) NOT NULL,
+  `CreatedOn` datetime NOT NULL,
+  `isActive` tinyint NOT NULL,
+  PRIMARY KEY (`supplierId`)
+);
+
+
+
+CREATE TABLE `product` (
+  `productId` int NOT NULL,
+  `productName` varchar(50) NOT NULL,
+  `unitPrice` decimal(10,0) NOT NULL,
+  `supplierId` int NOT NULL,
+  `createdOn` datetime NOT NULL,
+  `isActive` tinyint NOT NULL,
+  PRIMARY KEY (`productId`),
+  KEY `supplierId_idx` (`supplierId`),
+  CONSTRAINT `supplierId` FOREIGN KEY (`supplierId`) REFERENCES `supplier` (`supplierId`) ON DELETE RESTRICT ON UPDATE CASCADE
+) ;

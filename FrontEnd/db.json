@@ -1,0 +1,32 @@
+{
+  "customerList": [
+    {
+      "userName": "Sahan98",
+      "email": "sahan@gmail.com",
+      "firstName": "Sahan",
+      "lastName": "Kariyawasam",
+      "isActive": false,
+      "onCreated": "2022-09-23T04:16:59.418Z",
+      "id": 1
+    },
+    {
+      "userName": "Ravindu98",
+      "email": "ravindu@gmail.com",
+      "firstName": "Deshan",
+      "lastName": "Kalanka",
+      "isActive": false,
+      "onCreated": "2022-09-23T04:18:24.893Z",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
