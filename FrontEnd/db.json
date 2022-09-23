@@ -5,7 +5,7 @@
       "email": "sahan@gmail.com",
       "firstName": "Sahan",
       "lastName": "Kariyawasam",
-      "isActive": false,
+      "isActive": true,
       "onCreated": "2022-09-23T04:16:59.418Z",
       "id": 1
     },
@@ -17,6 +17,51 @@
       "isActive": false,
       "onCreated": "2022-09-23T04:18:24.893Z",
       "id": 2
+    },
+    {
+      "userName": "Kamal98",
+      "email": "kamal@gmail.com",
+      "firstName": "Kamal",
+      "lastName": "Perera",
+      "isActive": true,
+      "onCreated": "2022-09-23T05:30:57.518Z",
+      "id": 3
+    },
+    {
+      "userName": "Dachini99",
+      "email": "Dachini@gmail.com",
+      "firstName": "Dahami",
+      "lastName": "Nawanjana",
+      "isActive": true,
+      "onCreated": "2022-09-23T05:32:00.779Z",
+      "id": 4
+    },
+    {
+      "userName": "Sunil09",
+      "email": "sunil@gmail.com",
+      "firstName": "Sunil",
+      "lastName": "Perera",
+      "isActive": true,
+      "onCreated": "2022-09-23T05:32:39.275Z",
+      "id": 5
+    },
+    {
+      "userName": "Tharini45",
+      "email": "Tharini@gmail.com",
+      "firstName": "Tharini",
+      "lastName": "Nimali",
+      "isActive": false,
+      "onCreated": "2022-09-23T05:33:11.871Z",
+      "id": 6
+    },
+    {
+      "userName": "Deshan44",
+      "email": "Deshan@gmail.com",
+      "firstName": "Deshan",
+      "lastName": "Nalaka",
+      "isActive": true,
+      "onCreated": "2022-09-23T05:33:59.949Z",
+      "id": 7
     }
   ],
   "comments": [

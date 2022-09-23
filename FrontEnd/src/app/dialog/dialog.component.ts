@@ -22,7 +22,7 @@ export class DialogComponent implements OnInit {
       email: ['', Validators.required],
       firstName: ['',Validators.required],
       lastName: ['',Validators.required],
-      isActive: ['',Validators.required],
+      isActive: [true,Validators.required],
       onCreated: [true,Validators.required],
     });
 
